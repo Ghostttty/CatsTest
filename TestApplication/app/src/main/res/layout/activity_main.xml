@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="269dp"
+            app:srcCompat="@drawable/lock2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#10EAC9"
+            android:text="Autorization"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/fields"
+            android:padding="15sp"
+            android:textColor="@color/colorAccent"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginBottom="20sp"
+            android:hint="Password"
+            android:background="@drawable/fields"
+            android:padding="15sp"
+            android:textColor="@color/colorAccent"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_marginLeft="120sp"
+            android:layout_marginRight="120sp"
+            android:layout_marginBottom="20sp"
+            android:text="Login" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

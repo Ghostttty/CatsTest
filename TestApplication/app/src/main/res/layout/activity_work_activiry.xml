@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkActiviry">
+
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="697dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/Cat"
+            android:layout_width="match_parent"
+            android:layout_height="246dp"
+            app:srcCompat="@drawable/cat" />
+
+        <EditText
+            android:id="@+id/editTextNumber3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Колличество корма в день"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Учитывать наполнитель" />
+
+        <EditText
+            android:id="@+id/editTextNumber4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Колличество дней"
+            android:inputType="number"
+
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="120sp"
+            android:layout_marginRight="120sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/button2"
+            android:onClick="Click"
+            android:text="Рассчёт"
+            android:textColor="#0C0A0A" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#CFCBCB"
+            android:textSize="30sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
